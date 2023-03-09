@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Ask the user for the file name
+echo "Enter the file name:"
+read filename
+
+# Create the file and add 'X' to its contents
+echo "#!/bin/bash" > "$filename"
+
+# Open the file with Vim
+vim "$filename"
+
