@@ -10,3 +10,11 @@ echo "#!/bin/bash" > "$filename"
 # Open the file with Vim
 vim "$filename"
 
+# Change the permissions of the file to 744
+chmod 744 "$filename"
+
+# Add the file to Git
+git add "$filename"
+
+# Commit the changes with a message
+git commit -m "$filename"
